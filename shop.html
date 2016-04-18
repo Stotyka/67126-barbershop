@@ -5,11 +5,14 @@
     <title>Barbershop — Средства для ухода</title>
   </head>
   <body>
-    <header class="header">
+
+    <!-- ХЕДЕР -->
+    <header class="inner-header">
       <div class="container">
         <a class="inner-logo" href="index.html">
-          <img src="img/inner-logo.png" width="140" height="72" alt="Барбершоп «Бородинский»">
+          <img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»">
         </a>
+
         <nav class="menu">
           <ul>
             <li>
@@ -22,6 +25,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
+              <!-- как делать активный пункт меню, убирать ли ссылку? -->
               <a class="active" href="#">Магазин</a>
             </li>
             <li>
@@ -29,14 +33,21 @@
             </li>
           </ul>
         </nav>
+
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
+
       </div>
     </header>
+
+    <!-- КОНТЕНТ -->
     <main class="container">
+
+      <!-- ЗАЗОЛОВОК И КРОШКИ -->
       <div class="header-2">
         <h1>Средства для ухода</h1>
+
         <div class="breadcrumbs">
           <ul>
             <li>
@@ -46,14 +57,108 @@
               <a href="#">Магазин</a>
             </li>
             <li>
+              <!-- как делать активный пункт крошек, убирать ли тут ссылку? -->
               <a class="active" href="#">Средства для ухода</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="filter">
 
-      <div>
+      <!-- КОНТЕНТ -->
+      <div class="inner-content">
+
+        <!-- ФИЛЬТР -->
+        <div class="inner-content-filter">
+
+          <section class="manufacturers">
+            <h2 class="index-content-title">Производители:</h2>
+            <label><input type="checkbox" name="Baxter-of-California">Baxter of California</label>
+            <label><input type="checkbox" name="Mr-Natty">Mr Natty</label>
+            <label><input type="checkbox" name="Suavecito">Suavecito</label>
+            <label><input type="checkbox" name="Malin+Goetz">Malin+Goetz</label>
+            <label><input type="checkbox" name="Murray’s">Murray’s</label>
+            <label><input type="checkbox" name="American-Crew">American Crew</label>
+          </section>
+          <!-- нужны ли в name дефисы? -->
+          <section class="goods-group">
+            <h2 class="index-content-title">Группы товаров:</h2>
+            <label><input type="radio" name="goods-group" value="Shaving-accessories">Бритвенные принадлежности</label>
+            <label><input type="radio" name="goods-group" value="Care-funds">Средства для ухода</label>
+            <label><input type="radio" name="goods-group" value="Accessories">Аксессуары</label>
+          </section>
+
+          <input type="submit" value="Показать">
+
+        </div>
+
+        <!-- ТОВАРЫ -->
+        <!-- не уверен с выбором названий тегов, может это article -->
+        <div class="goods">
+
+          <!-- ставить шесть товаров или их количество и содержание задается не так? -->
+          <section class="product">
+
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий «Baxter of California">
+              <p>Набор для путешествий «Baxter of California»</p>
+            </a>
+
+            <!-- как понять, что оборачивать в div, а что нет? -->
+            <div class="product-price">
+              <p>2 900 РУБ.</p>
+            </div>
+
+            <a class="product-buy" href="#">Купить</a>
+
+          </section>
+
+          <section class="pagination">
+            <a class="page-number" href="#">1</a>
+            <!-- как делать активную страницу, убирать ли тут ссылку? -->
+            <a class="page-number-active" href="#">2</a>
+            <a class="page-number" href="#">3</a>
+            <a class="page-number" href="#">4</a>
+          </section>
+
+        </div>
+
+
+      </div>
+
+
+
+
     </main>
+
+    <!-- ФУТЕР -->
+    <footer class="main-footer">
+      <div class="container">
+
+        <!-- КОНТАКТЫ -->
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+
+        <!-- СОЦСЕТИ -->
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+
+        <!-- КОПИРАЙТ -->
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+
+      </div>
+
+    </footer>
+
   </body>
 </html>
