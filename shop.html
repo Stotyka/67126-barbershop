@@ -7,9 +7,10 @@
   <body>
 
     <!-- ХЕДЕР -->
-    <header class="inner-header">
+    <header class="inner-page">
       <div class="container">
-        <a class="inner-logo" href="index.html">
+
+        <a class="logo" href="index.html">
           <img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»">
         </a>
 
@@ -24,9 +25,8 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
-              <!-- как делать активный пункт меню, убирать ли ссылку? -->
-              <a class="active" href="#">Магазин</a>
+            <li class="active">
+              <a href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -34,7 +34,7 @@
           </ul>
         </nav>
 
-        <div class="user-block">
+        <div class="user">
           <a class="login" href="#">Вход</a>
         </div>
 
@@ -45,7 +45,7 @@
     <main class="container">
 
       <!-- ЗАЗОЛОВОК И КРОШКИ -->
-      <div class="header-2">
+      <div class="title">
         <h1>Средства для ухода</h1>
 
         <div class="breadcrumbs">
@@ -57,21 +57,20 @@
               <a href="#">Магазин</a>
             </li>
             <li>
-              <!-- как делать активный пункт крошек, убирать ли тут ссылку? -->
               <a class="active" href="#">Средства для ухода</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <!-- КОНТЕНТ -->
+      <!-- СОДЕРЖАНИЕ СТРАНИЦЫ -->
       <div class="inner-content">
 
         <!-- ФИЛЬТР -->
-        <div class="inner-content-filter">
+        <div class="filter">
 
           <section class="manufacturers">
-            <h2 class="index-content-title">Производители:</h2>
+            <h2 class="sub-title">Производители:</h2>
             <label><input type="checkbox" name="Baxter-of-California">Baxter of California</label>
             <label><input type="checkbox" name="Mr-Natty">Mr Natty</label>
             <label><input type="checkbox" name="Suavecito">Suavecito</label>
@@ -79,63 +78,106 @@
             <label><input type="checkbox" name="Murray’s">Murray’s</label>
             <label><input type="checkbox" name="American-Crew">American Crew</label>
           </section>
-          <!-- нужны ли в name дефисы? -->
-          <section class="goods-group">
-            <h2 class="index-content-title">Группы товаров:</h2>
-            <label><input type="radio" name="goods-group" value="Shaving-accessories">Бритвенные принадлежности</label>
-            <label><input type="radio" name="goods-group" value="Care-funds">Средства для ухода</label>
-            <label><input type="radio" name="goods-group" value="Accessories">Аксессуары</label>
+
+          <section class="product-group">
+            <h2 class="sub-title">Группы товаров:</h2>
+            <label><input type="radio" name="product-group" value="Shaving-accessories">Бритвенные принадлежности</label>
+            <label><input type="radio" name="product-group" value="Care-funds">Средства для ухода</label>
+            <label><input type="radio" name="product-group" value="Accessories">Аксессуары</label>
           </section>
 
-          <input type="submit" value="Показать">
+          <a class="btn" href="#">Показать</a>
 
         </div>
 
         <!-- ТОВАРЫ -->
-        <!-- не уверен с выбором названий тегов, может это article -->
-        <div class="goods">
-
-          <!-- ставить шесть товаров или их количество и содержание задается не так? -->
+        <div class="products-wrapper">
+<!-- в макете в рамках одного текстового блока название товара пишется строчными, а марка олкапсом, как с этим быть? -->
           <section class="product">
-
             <a href="item.html">
-              <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий «Baxter of California">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
               <p>Набор для путешествий «Baxter of California»</p>
             </a>
-
-            <!-- как понять, что оборачивать в div, а что нет? -->
-            <div class="product-price">
+            <div class="price">
               <p>2 900 РУБ.</p>
             </div>
-
-            <a class="product-buy" href="#">Купить</a>
-
+            <a class="btn" href="#">Купить</a>
           </section>
 
-          <section class="pagination">
-            <a class="page-number" href="#">1</a>
-            <!-- как делать активную страницу, убирать ли тут ссылку? -->
-            <a class="page-number-active" href="#">2</a>
-            <a class="page-number" href="#">3</a>
-            <a class="page-number" href="#">4</a>
+          <section class="product">
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
+              <p>Увлажняющий кондиционер «Baxter of California»</p>
+            </a>
+            <div class="price">
+              <p>750 РУБ.</p>
+            </div>
+            <a class="btn" href="#">Купить</a>
           </section>
 
-        </div>
+          <section class="product">
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос «Suavecito»">
+              <p>Гель для волос «Suavecito»</p>
+            </a>
+            <div class="price">
+              <p>290 РУБ.</p>
+            </div>
+            <a class="btn" href="#">Купить</a>
+          </section>
 
+          <section class="product">
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Глина для укладки волос «American Crew»">
+              <p>Глина для укладки волос «American Crew»</p>
+            </a>
+            <div class="price">
+              <p>500 РУБ.</p>
+            </div>
+            <a class="btn" href="#">Купить</a>
+          </section>
 
-      </div>
+          <section class="product">
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос «American Crew»">
+              <p>Гель для волос «American Crew»</p>
+            </a>
+            <div class="price">
+              <p>300 РУБ.</p>
+            </div>
+            <a class="btn" href="#">Купить</a>
+          </section>
 
+          <section class="product">
+            <a href="item.html">
+              <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для бритья «Baxter of California">
+              <p>Набор для бритья «Baxter of California»</p>
+            </a>
+            <div class="price">
+              <p>3 900 РУБ.</p>
+            </div>
+            <a class="btn" href="#">Купить</a>
+          </section>
 
+        </div><!-- end products-wrapper -->
 
+        <section class="pagination">
+          <a class="btn" href="#">1</a>
+          <a class="btn active" href="#">2</a>
+          <a class="btn" href="#">3</a>
+          <a class="btn" href="#">4</a>
+        </section>
+
+      </div><!-- end inner-content -->
 
     </main>
 
     <!-- ФУТЕР -->
-    <footer class="main-footer">
+    <footer>
       <div class="container">
 
         <!-- КОНТАКТЫ -->
-        <section class="footer-contacts">
+        <section class="contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
@@ -143,21 +185,20 @@
         </section>
 
         <!-- СОЦСЕТИ -->
-        <section class="footer-social">
+        <section class="social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn vk" href="#">Вконтакте</a>
+          <a class="social-btn fb" href="#">Фейсбук</a>
+          <a class="social-btn inst" href="#">Инстаграм</a>
         </section>
-
+<!-- а есть ли разница между социальной кнопкой с иконкой и просто кнопкой с надписью, или можно их в один класс btn? -->
         <!-- КОПИРАЙТ -->
-        <section class="footer-copyright">
+        <section class="copyright">
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
 
       </div>
-
     </footer>
 
   </body>
