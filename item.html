@@ -7,35 +7,37 @@
   <body>
 
     <!-- ХЕДЕР -->
-    <header class="inner-page">
+    <header class="header">
       <div class="container">
 
-        <a class="logo" href="index.html">
-          <img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»">
-        </a>
+        <div class="header-logo">
+          <a href="index.html"><img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+        </div>
 
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li class="active">
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Информация</a>
+              </li>
+              <li>
+                <a href="/">Новости</a>
+              </li>
+              <li>
+                <a href="/">Прайс-лист</a>
+              </li>
+              <li class="active">
+                <a href="/">Магазин</a>
+              </li>
+              <li>
+                <a href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-        <div class="user">
-          <a class="login" href="#">Вход</a>
+        <div class="user-block">
+          <a class="login" href="/">Вход</a>
         </div>
 
       </div>
@@ -45,65 +47,65 @@
     <main class="container">
 
       <!-- ЗАЗОЛОВОК И КРОШКИ -->
-      <div class="title">
-        <h1>Набор для путешествий «Baxter of California»</h1>
+      <header class="title">
+        <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
 
         <div class="breadcrumbs">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="/">Главная</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="/">Магазин</a>
             </li>
             <li>
-              <a href="#">Средства для ухода</a>
+              <a href="/">Средства для ухода</a>
             </li>
             <li>
-              <a class="active" href="#">Набор для путешествий «Baxter of California»</a>
+              <a class="active" href="/">Набор для путешествий «Baxter of California»</a>
             </li>
           </ul>
         </div>
-      </div>
+      </header>
 
       <!-- СОДЕРЖАНИЕ СТРАНИЦЫ -->
       <div class="inner-content">
 
         <!-- ГАЛЕРЕЯ -->
-        <div class="gallery">
-          <figure  class="content">
+        <div class="product-gallery">
+          <div  class="product-gallery-content">
             <img src="http://placehold.it/460x500" width="460" height="500" alt="фото1»">
-          </figure>
+          </div>
 
-          <div class="preview">
-            <button class="preview"><!-- это же кнопки, правда? -->
-              <img src="http://placehold.it/140x150" width="140" height="150" alt="фото2">
-            </button>
-            <button class="preview">
-              <img src="http://placehold.it/140x150" width="140" height="150" alt="фото3">
-            </button>
-            <button class="preview">
-              <img src="http://placehold.it/140x150" width="140" height="150" alt="фото4">
-            </button>
+          <div class="product-gallery-preview">
+            <img src="http://placehold.it/140x150" width="140" height="150" alt="фото2">
+            <img src="http://placehold.it/140x150" width="140" height="150" alt="фото3">
+            <img src="http://placehold.it/140x150" width="140" height="150" alt="фото4">
           </div>
 
         </div>
 
         <!-- ОПИСАНИЕ -->
-        <div class="description">
-          <p>Eсть в наличии</p>
-          <p class="code">Артикул: dexter-ae</p>
-          <p>Travel Kit — необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <div class="product-content-right">
 
-          <div class="price">
-            <p>2 900 РУБ.</p>
+          <div class="product-availability">
+            <span>Eсть в наличии</span>
+          </div>
+          <div class="product-code">
+            <span>Артикул: dexter-ae</span>
           </div>
 
-          <a class="btn" href="#">Купить</a>
+          <div class="product-description">
+            <p>Travel Kit — необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+          </div>
 
-          <section class="product-kit">
-            <h2 class="sub-title">В набор входят:</h2>
+          <div class="product-price">
+            <span>2 900 РУБ.</span>
+            <a class="btn" href="/">Купить</a>
+          </div>
 
+          <div class="product-kit">
+            <h2 class="index-content-title">В набор входят:</h2>
             <ul>
               <li>Средство для умывания (50 мл)</li>
               <li>Увлажняющий крем (50 мл)</li>
@@ -111,37 +113,36 @@
               <li>Крем после бритья, шампунь (50 мл)</li>
               <li>Удобная кожаная косметичка</li>
             </ul>
-
-          </section>
+          </div>
 
         </div>
 
-      </div>
+      </div><!-- end inner-content -->
 
     </main>
 
     <!-- ФУТЕР -->
-    <footer>
+    <footer class="footer">
       <div class="container">
 
         <!-- КОНТАКТЫ -->
-        <section class="contacts">
+        <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          <a href="/">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </section>
 
         <!-- СОЦСЕТИ -->
-        <section class="social">
+        <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn vk" href="#">Вконтакте</a>
-          <a class="social-btn fb" href="#">Фейсбук</a>
-          <a class="social-btn inst" href="#">Инстаграм</a>
+          <a class="btn btn-vk" href="/">Вконтакте</a>
+          <a class="btn btn-fb" href="/">Фейсбук</a>
+          <a class="btn btn-inst" href="/">Инстаграм</a>
         </section>
-<!-- а есть ли разница между социальной кнопкой с иконкой и просто кнопкой с надписью, или можно их в один класс btn? -->
+
         <!-- КОПИРАЙТ -->
-        <section class="copyright">
+        <section class="footer-copyright">
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
